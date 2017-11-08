@@ -1,0 +1,107 @@
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: url(../img/back.jpg) no-repeat center top/cover;
+  font-size: 20px;
+  overflow: hidden;
+  padding-top: 60px; }
+
+.wrapper {
+  width: 612px;
+  height: 155px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.clock-widget {
+  font-family: 'Rubik Mono One', sans-serif; }
+  .clock-widget-ghost {
+    opacity: .1;
+    position: absolute;
+    z-index: 9999; }
+
+.my-clock {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 90px;
+  text-align: center; }
+
+.scroll-slider {
+  position: relative;
+  cursor: pointer;
+  z-index: 1; }
+  .scroll-slider .scroll {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; }
+
+.my-slider {
+  border-radius: 4px;
+  background: linear-gradient(to right, #151313, #F94848);
+  position: absolute;
+  left: 8px;
+  bottom: 0; }
+  .my-slider .scroll {
+    width: 12px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+#scroll-slider {
+  width: 100px;
+  height: 14px; }
+
+.select-list {
+  width: 260px;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .select-list__item {
+    background: #151313;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+    cursor: pointer; }
+    .select-list__item.selected {
+      background: linear-gradient(to right, #151313, #F94848);
+      color: #fff; }
+
+.my-list {
+  position: absolute;
+  bottom: -216px;
+  right: 0; }
+
+.counter-widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 116px;
+  background-color: #fff;
+  padding: 8px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+  .counter-widget__minus, .counter-widget__plus {
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    line-height: 26px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+  .counter-widget__plus {
+    font-size: 23px;
+    line-height: 28px; }
+
+.my-counter {
+  position: absolute;
+  bottom: -35px;
+  left: 150px; }
